@@ -21,11 +21,15 @@
 
 var myHandler = function (){
 	var i = 0;
+    console.log("first " + i)
 	var counter = function() {
-		return i++;
-	}
+        console.log("third " + i)
 
-	return counter;
+        return i++;
+	}
+    console.log("second " + i)
+
+    return counter;
 
 }
 
